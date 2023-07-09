@@ -5,10 +5,14 @@ Our image classification model can classify skin diseases based on images with a
 
 # Tools Used
 
-Generative AI Studio Language Model
-Vertex AI Custom Model Training
-PaLM 2
-Streamlit
+Generative AI Studio Language Model  
+
+Vertex AI Custom Model Training  
+
+PaLM 2  
+
+Streamlit  
+
 Kaggle
 
 # License
