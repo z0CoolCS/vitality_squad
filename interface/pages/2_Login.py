@@ -11,6 +11,7 @@ from pathlib import Path
 
 names, usernames = upload_names_usernames()
 
+st.text(str(len(names)))
 hashed_passwords = stauth.Hasher(['abc', 'def']).generate()
 
 import yaml
@@ -20,6 +21,7 @@ path_temporal = Path(__file__).parent
 
 with open(os.path.join(path_temporal, '..', 'security','config.yaml')) as file:
     config = yaml.load(file, Loader=SafeLoader)
+
 for username, hashed_password in zip(config['credentials']['usernames'].keys(), hashed_passwords):
     config['credentials']['usernames'][username]['password'] = hashed_password
 
