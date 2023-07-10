@@ -5,7 +5,6 @@ import streamlit_authenticator as stauth
 from streamlit_chat import message
 from streamlit_option_menu import option_menu
 from PIL import Image
-from security.params import *
 from utils.nav import *
 import sys
 from streamlit_extras.switch_page_button import switch_page
