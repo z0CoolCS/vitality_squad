@@ -12,10 +12,10 @@ from streamlit_extras.switch_page_button import switch_page
 import vertexai
 from vertexai.preview.language_models import ChatModel, InputOutputTextPair
 from utils.predict_image_classification_sample import predict_image_classification_sample
-
+from pathlib import Path
 import io
 
-path = os.path.dirname(os.path.abspath(__file__)) 
+path = Path(__file__).parent
 sys.path.append(path)
 
 #ico_website = Image.open(open("img/skin_icon.ico", "rb"))
