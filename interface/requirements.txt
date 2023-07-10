@@ -1,0 +1,12 @@
+streamlit-authenticator==0.1.5
+streamlit-chat
+cloud-sql-python-connector
+cryptography
+pymysql
+streamlit-option-menu
+streamlit-extras
+google-cloud-aiplatform
+streamlit-image-select
+streamlit-webrtc
+streamlit-server-state
+opencv-python-headless
