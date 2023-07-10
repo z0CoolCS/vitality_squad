@@ -7,7 +7,9 @@ from streamlit_option_menu import option_menu
 from streamlit_extras.switch_page_button import switch_page
 
 import os
-# --- USER AUTHENTICATION ---
+from pathlib import Path
+
+
 names = ["Peter Parker", "Rebecca Miller"]
 usernames = ["pparker", "rmiller"]
 
@@ -16,10 +18,11 @@ hashed_passwords = stauth.Hasher(['abc', 'def']).generate()
 import yaml
 from yaml.loader import SafeLoader
 
-path_temporal = os.path.dirname(os.path.abspath(__file__))
+path_temporal = Path(__file__).parent
 print(os.listdir(path_temporal))
-with open(os.path.join(path_temporal, '..','/security/config.yaml')) as file:
+with open(os.path.join(path_temporal, 'security','config.yaml')) as file:
     config = yaml.load(file, Loader=SafeLoader)
+
 for username, hashed_password in zip(config['credentials']['usernames'].keys(), hashed_passwords):
     config['credentials']['usernames'][username]['password'] = hashed_password
 
