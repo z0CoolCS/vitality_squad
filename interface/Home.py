@@ -155,7 +155,9 @@ with columns[1]:
 
 hashed_passwords = stauth.Hasher(['abc', 'def']).generate()
 
-with open('security/config.yaml') as file:
+
+
+with open(os.path.join(path, 'security','config.yaml')) as file:
     config = yaml.load(file, Loader=SafeLoader)
 for username, hashed_password in zip(config['credentials']['usernames'].keys(), hashed_passwords):
     config['credentials']['usernames'][username]['password'] = hashed_password

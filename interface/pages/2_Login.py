@@ -11,7 +11,6 @@ from pathlib import Path
 
 names, usernames = upload_names_usernames()
 
-st.text(str(len(names)))
 hashed_passwords = stauth.Hasher(['abc', 'def']).generate()
 
 import yaml

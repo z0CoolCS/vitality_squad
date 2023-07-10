@@ -62,7 +62,7 @@ elif selected == 'Login':
 
 try:
     if authenticator.register_user('Register user', preauthorization=False):
-        with open('../config.yaml', 'w') as file:
+        with open(os.path.join(path_temporal, '..', 'security','config.yaml'), 'w') as file:
             yaml.dump(config, file, default_flow_style=False)
         st.success('User registered successfully')
         switch_page("Login")
