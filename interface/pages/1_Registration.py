@@ -17,7 +17,7 @@ import yaml
 from yaml.loader import SafeLoader
 
 path_temporal = os.path.dirname(os.path.abspath(__file__)) 
-with open(os.path.join(path_temporal, '..','/security/config.yaml') as file:
+with open(os.path.join(path_temporal, '..','/security/config.yaml')) as file:
     config = yaml.load(file, Loader=SafeLoader)
 for username, hashed_password in zip(config['credentials']['usernames'].keys(), hashed_passwords):
     config['credentials']['usernames'][username]['password'] = hashed_password
