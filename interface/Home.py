@@ -18,12 +18,11 @@ import io
 path = os.path.dirname(os.path.abspath(__file__)) 
 sys.path.append(path)
 
-ico_website = Image.open(open("img/skin_icon.ico", "rb"))
-avatar1 = Image.open(open("img/skin_icon.png", "rb"))
+#ico_website = Image.open(open("img/skin_icon.ico", "rb"))
 
 st.set_page_config(
     page_title="Vitality Squad - Skincare", 
-    page_icon=ico_website, 
+    #page_icon=ico_website, 
     layout="wide", 
     initial_sidebar_state="collapsed"
     )
