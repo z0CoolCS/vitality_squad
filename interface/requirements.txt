@@ -1,4 +1,4 @@
-streamlit-authenticator==0.1.5
+streamlit-authenticator==0.2.2
 streamlit-chat
 cloud-sql-python-connector
 cryptography
