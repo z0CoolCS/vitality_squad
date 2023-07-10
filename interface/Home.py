@@ -16,13 +16,16 @@ from pathlib import Path
 import io
 import json 
 
-if not os.path.exists('data.json'):
-    with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(st.secrets.gcp_service_account, f, default=dict)
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'data.json'
 
 path = Path(__file__).parent
 sys.path.append(path)
+
+
+if not os.path.exists(os.path.join(path, 'data.json')):
+    with open(os.path.join(path, 'data.json'), 'w', encoding='utf-8') as f:
+        json.dump(st.secrets.gcp_service_account, f, default=dict)
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.path.join(path, 'data.json')
+
 
 #ico_website = Image.open(open("img/skin_icon.ico", "rb"))
 
