@@ -1,7 +1,10 @@
 # DermDetect
-We are the Vitality Squad. Our team has created a Cancer Skin Disease App, called DermDetect, that incorporates both a chatbot and image classification model and displayed using a Streamlit user interface. This app allows a patient to discuss skin related medical concerns with the chatbot and submit images to classify what skin disease they may have based on 7 different classifications. Our model was trained using approximately 700 images collected from a Kaggle dataset. This app uses carefully picked out images to provide users with an accurate diagnosis. A segmentation model has also been incorporated to classify skin diseases based on their segmentation.
+Introducing DermDetect, the Cancer Skin Disease App developed by the innovative Vitality Squad. Powered by the PaLM 2 chatbot and an advanced image classification model, DermDetect revolutionizes skin health management. Through its intuitive Streamlit user interface, patients can engage in informative conversations with the chatbot, discussing their skin-related medical concerns. By submitting images, users receive accurate disease classification from 7 different categories. Our model underwent rigorous training on a curated dataset of around 700 images sourced from Kaggle, ensuring precise diagnoses. DermDetect carefully selects images to provide users with reliable results. With an impressive accuracy of approximately 86%, our image classification model serves as a valuable tool in the early detection and understanding of skin diseases. Experience the future of skin health with DermDetect, the ultimate companion in your journey towards well-being.
 
-Our image classification model can classify skin diseases based on images with an accuracy of approximately 86%.
+# Example
+
+![image](https://github.com/z0CoolCS/vitality_squad/assets/121467771/d83c26ce-7411-47d7-912f-b6b319587e85)
+
 
 # Tools Used
 
