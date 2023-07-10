@@ -14,6 +14,12 @@ from vertexai.preview.language_models import ChatModel, InputOutputTextPair
 from utils.predict_image_classification_sample import predict_image_classification_sample
 from pathlib import Path
 import io
+import json 
+
+if not os.path.exists('data.json'):
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(st.secrets.gcp_service_account, f, default=dict)
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'data.json'
 
 path = Path(__file__).parent
 sys.path.append(path)
