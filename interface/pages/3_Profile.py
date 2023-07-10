@@ -55,7 +55,7 @@ col3.markdown("## Age")
 col3.markdown(f"### 78")
 
 #Image.open
-col4.image('img/jsmith.jpg', width=400)
+col4.image(os.path.join(path_temporal, '..','img/jsmith.jpg'), width=400)
 #col2.metric("FTEC", "$121.10", "0.46%")
 #col3.metric("BTC", "$46,583.91", "+4.87%")
 
