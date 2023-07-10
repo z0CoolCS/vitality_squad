@@ -16,7 +16,8 @@ hashed_passwords = stauth.Hasher(['abc', 'def']).generate()
 import yaml
 from yaml.loader import SafeLoader
 
-path_temporal = os.path.dirname(os.path.abspath(__file__)) 
+path_temporal = os.path.dirname(os.path.abspath(__file__))
+print(os.listdir(path_temporal))
 with open(os.path.join(path_temporal, '..','/security/config.yaml')) as file:
     config = yaml.load(file, Loader=SafeLoader)
 for username, hashed_password in zip(config['credentials']['usernames'].keys(), hashed_passwords):
