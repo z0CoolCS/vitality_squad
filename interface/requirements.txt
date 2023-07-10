@@ -10,3 +10,4 @@ streamlit-image-select
 streamlit-webrtc
 streamlit-server-state
 opencv-python-headless
+python-dotenv
